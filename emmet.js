@@ -12069,7 +12069,8 @@ emmet.exec(function(require, _) {
  * Filter for escaping unsafe XML characters: <, >, &
  * @author Sergey Chikuyonok (serge.che@gmail.com)
  * @link http://chikuyonok.ru
- */emmet.exec(function(require, _) {
+ */
+emmet.exec(function(require, _) {
 	var charMap = {
 		'<': '&lt;',
 		'>': '&gt;',
@@ -12555,7 +12556,8 @@ emmet.exec(function(require, _) {
 		
 		return tree;
 	});
-});/**
+});
+/**
  * Trim filter: removes characters at the beginning of the text
  * content that indicates lists: numbers, #, *, -, etc.
  * 
@@ -12591,7 +12593,8 @@ emmet.exec(function(require, _) {
 		var re = new RegExp(require('preferences').get('filter.trimRegexp'));
 		return process(tree, re);
 	});
-});/**
+});
+/**
  * Filter for trimming "select" attributes from some tags that contains
  * child elements
  * @author Sergey Chikuyonok (serge.che@gmail.com)
@@ -12601,7 +12604,8 @@ emmet.exec(function(require, _) {
  * @memberOf __xslFilterDefine
  * @param {Function} require
  * @param {Underscore} _
- */emmet.exec(function(require, _) {
+ */
+emmet.exec(function(require, _) {
 	var tags = {
 		'xsl:variable': 1,
 		'xsl:with-param': 1
@@ -14281,7 +14285,7 @@ emmet.define('textarea', function(require, _) {
 		
 	//Attach the function with the event
 	if (doc.addEventListener) doc.addEventListener(keyEvent, runAction, false);
-	else if(doc.attachEvent) ele.attachEvent('on' + keyEvent, runAction);
+	else if(doc.attachEvent) doc.attachEvent('on' + keyEvent, runAction);
 	else doc['on' + keyEvent] = func;
 	
 	options = copyOptions();
