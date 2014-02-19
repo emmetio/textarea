@@ -4,7 +4,7 @@
 
 ******
 
-To add Emmet support and  basic code editor features (like Tab key handler and formatted linebreak insertion) to your `&lt;textarea&gt;` boxes:
+To add Emmet support and  basic code editor features (like Tab key handler and formatted linebreak insertion) to your `<textarea>` boxes:
 
 1. Add `<script src="emmet.min.js"></script>` into your page
 2. Run this JavaScript code:
